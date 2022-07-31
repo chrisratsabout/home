@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu';
+    background-color: rgb(127, 192, 224);
+    
+}
+
+button {
+    font-family: 'Ubuntu';
+    border-radius: 20px;
+}
+
+button:hover {
+    background: rgb(94, 94, 94);
+}
+.heading {
+    text-align: center;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+.profile {
+    margin-top: 15px;
+}
+
+.profile, .hobbies-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.work {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.school, .work, .hobbies {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+ul {
+    line-height: 1.5;
+}
+
+.work-info {
+    text-align: left;
+}
+
+.school-img, .work-img {
+    width: 300px;
+    height: 300px;
+}
+
+.iu-img {
+    width: 250px;
+    height: 300px;
+}
+
+.chs-img {
+    width: 150px;
+    height: 150px;
+}
+
+.excellon-img {
+    width: 300px;
+}
+
+.flags-img, .guitar-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+
+
+.accordion {
+    width: 80%;
+}
+
+.accordion_btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #333;
+    color: #fff;
+    text-align: left;
+    transition: background .2s;
+    margin-bottom: 1rem;
+}
+
+.accordion_btn::after {
+    content: '\25be';
+    float: right;
+    transform: scale(1.5)
+}
+
+.accordion_btn_active {
+    background: #555;
+    margin-bottom: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+
+}
+
+.accordion_btn_active::after {
+    content: '\25b4';
+
+}
+
+.accordion_btn_active+.accordion_content {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+
+.accordion_content {
+    display: none;
+    overflow: hidden;
+    padding: 15px 15px;
+    background: #eee;
+}

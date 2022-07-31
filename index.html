@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x_icon" href="favicon.ico">
+    <title>Christopher Ratsabout</title>
+
+</head>
+
+<body>
+    <div class="heading">
+        <img class="profile" src="images/profile.jpg" alt="profile">
+        <h1>Christopher Ratsabout</h1>
+    </div>
+    <div class="accordion">
+        <button type="button" class="accordion_btn">Education</button>
+        <div class="accordion_content">
+            <div class="school">
+                <img class="school-img" src="images/chs.png" alt="chs">
+                <b>
+                    <p>Carroll High School (2006-2010)</p>
+                </b>
+                <p>Core 40 Academic Honors</p>
+            </div>
+            <div class="school">
+                <img class="school-img" src="images/complutense.png" alt="complutense">
+                <b>
+                    <p>Universidad Complutense de Madrid (2012-2013)</p>
+                </b>
+                <p>Academic Year Study Abroad</p>
+            </div>
+            <div class="school">
+                <img class="iu-img" src="images/iu.png" alt="iu">
+                <b>
+                    <p>Indiana University Bloomington (2010-2015)</p>
+                </b>
+                <p>B.S. in Education, Graduated with Distinction</p>
+            </div>
+
+        </div>
+
+        <button type="button" class="accordion_btn">Work Experience</button>
+        <div class="accordion_content">
+            <div class="work">
+                <img class="excellon-img" src="images/excellon.png" alt="excellon">
+                <div class="work-info">
+                    <b>
+                        <h2>Excellon Motors (2018 - present)</h2>
+                    </b>
+                    <h3>CNC Programmer and Machinist</h3>
+                    <ul>
+                        <li>Interpreted GE drawings, used trigonometry and geometry knowledge to write programs for CNC
+                            machines with G code</li>
+                        <li>Operated HAAS ST20-Y, ST35, VF-4, Mori Seiki SL-15 lathe to machine castings and bar stock
+                        </li>
+                        <li>Responsible for monitoring inventory and kanban to ensure the availability of parts during
+                            assembly process</li>
+                    </ul>
+                </div>
+
+            </div>
+            <br>
+            <div class="work">
+                <img class="guitar-img" src="images/guitar.png" alt="guitar">
+                <div class="work-info">
+                    <b>
+                        <h2>Private Music Instructor (2015 - present)</h2>
+                    </b>
+                    <h3>Guitar and Baritone</h3>
+                    <ul>
+                        <li>Transcribed music of all genres and instructed students how to play their favorite songs
+                            while incorporating crucial guitar techniques and music theory concepts</li>
+                            <li>Prepared and instructed students on how to perform their school's concert band music while focusing on music-reading fundamentals such as pitch, rhythm, dynamics, time signatures, etc.</li>
+                    </ul>
+                </div>
+
+            </div>
+            <br>
+            <div class="work">
+                <img class="chs-img" src="images/chs.png" alt="chs">
+                <div class="work-info">
+                    <b>
+                        <h2>Carroll High School (2015-2018)</h2>
+                    </b>
+                    <h3>Spanish 1 & 2 Teacher/Level 1 Team Leader</h3>
+                    <ul>
+                        <li>Spanish 1 team leader responsible for curriculum pacing and creating skills-based
+                            assessments</li>
+                        <li>Member of district’s Curriculum Alignment and Assessment Team to ensure vertical and
+                            horizontal alignment of World Languages Department</li>
+                        <li>Served as mentor for new teachers in the district by helping them acclimate to the school
+                            and district’s climate</li>
+                            <li>Involved in extra curriculars such as Carroll Show Choirs as a professional instrumenalist and also served as sponsor of the Guitar Club and Spanish Club</li>
+                    </ul>
+                </div>
+
+            </div>
+            <br>
+            <div class="work">
+                <img class="flags-img" src="images/flags.jpeg" alt="flags">
+                <div class="work-info">
+                    <b>
+                        <h2>Private Language Tutor (2014-2015)</h2>
+                    </b>
+                    <h3>Spanish/English</h3>
+                    <ul>
+                        <li>Created materials and explained grammatical concepts to help struggling students improve their
+                            understanding and skills in the target language</li>
+                            <li>Served as a conversation partner to practice language output and comprehension while discussing cultural concepts and colloquial expressions</li>
+                    </ul>
+                </div>
+
+            </div>
+            <br>
+
+        </div>
+
+        <button type="button" class="accordion_btn">Hobbies</button>
+        <div class="accordion_content">
+            <div class="hobbies">
+                <img class="hobbies-img" src="images/music.JPG" alt="music">
+                <b>
+                    <h3>Music</h3>
+                </b>
+                <p>Proficient at guitar and bass (playing 18 years)</p>
+            </div>
+            <div class="hobbies">
+                <img class="hobbies-img" src="images/travel.jpeg" alt="travel">
+                <b>
+                    <h3>Travel</h3>
+                </b>
+                <p>Doi Suthep in Chiang Mai, Thailand pictured</p>
+            </div>
+            <div class="hobbies">
+                <img class="hobbies-img" src="images/art.JPG" alt="art">
+                <b>
+                    <h3>Art</h3>
+                </b>
+                <p>Drawing in Photoshop and Affinity Photo</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        //target all buttons
+        const btns = document.querySelectorAll('.accordion_btn');
+
+        //loop buttons
+        //click event for all buttons
+        //loop buttons again with a parameter of 'item' in this case
+        //write an if statement to say that if the 'item' does not match the button that is clicked, then that accordion_btn_active class will be removed
+        //query selector for the accordion content (which is hidden by default in css)
+        //the button will toggle to the active accordion_btn_active class and appear
+
+        btns.forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                btns.forEach(function (item) {
+                    if (item !== btn) {
+                        item.classList.remove('accordion_btn_active');
+                    }
+                })
+                const accordionContent = document.querySelectorAll('.accordion_content');
+                btn.classList.toggle('accordion_btn_active');
+            })
+        })
+    </script>
+
+
+</body>
+
+</html>
