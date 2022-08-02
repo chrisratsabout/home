@@ -25,15 +25,23 @@ button:hover {
     text-align: center;
 }
 
+h1 {
+    color: #333;
+}
+
 h2, h3 {
     text-align: center;
 }
 
 .profile {
     margin-top: 15px;
+    width: 300px;
+    border-radius: 20px;
+    border: 15px solid #333;
 }
 
-.profile, .hobbies-img {
+
+.hobbies-img {
     width: 300px;
     height: 300px;
     border-radius: 50%;
